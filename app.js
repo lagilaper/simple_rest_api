@@ -21,7 +21,6 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
 
 app.get('/books', books.findAll);
 app.get('/books/:id', books.findById);
